@@ -1,14 +1,17 @@
 #!/bin/bash
 
 ID=$(id -u)
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo "ERROR:: $2 ... FAILED"
+        echo "ERROR:: $2 ... $R FAILED $N"
         exit 1
     else
-        echo "$2 ... SUCCESS"
+        echo "$2 ... $G SUCCESS $N"
     fi
 }
 
