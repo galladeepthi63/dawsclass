@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIRECTORY ="/tmp/shell-script-log"
+SOURCE_DIRECTORY="/tmp/shell-script-log"
 
 if [ ! -d $SOURCE_DIRECTORY ] # ! denotes opposite
     then
